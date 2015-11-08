@@ -56,16 +56,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   #map {
+     width: 100vw;
+     height: 90vh;
+   }
 
+   .mdl-layout__header, .mdl-layout__drawer-button,
+    .mdl-layout__header-row .mdl-navigation__link {
+     /* This background is dark, so we set text to white. Use 87% black instead if
+        your background is light. */
+     color: black;
+   }
 
+   .mdl-mini-footer {
+     position:fixed;
+     left:0px;
+     bottom:0px;
+     width:100vw;
+     height: 1.5vh;
+   }
 
-
-
-
-
-
-
-
+   .mdl-mini-footer__left-section {
+     margin-top: -2vh;
+   }
 
 
 

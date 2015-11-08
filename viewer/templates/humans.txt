@@ -1,0 +1,33 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    	Name: Nir Galon
+	Website: https://github.com/nirgn975
+
+	Name: Efrat Abramovitz
+	Website: https://github.com/efratoio
+
+	Name: Jacob Kili
+	Website: https://github.com/solekiller
+
+	Name: Nir Galon
+	Website: nirgn.com
+
+# THANKS
+
+	Name: Udi Oron
+	GitHub: https://github.com/nonZero
+
+	Name: Yotam Manor
+	GitHub: https://github.com/yotammanor
+
+	Name: Danny Streifler
+	Email: danny.streifler@nli.org.il
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+

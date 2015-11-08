@@ -19,5 +19,6 @@ from viewer import views
 
 urlpatterns = [
     url(r'^$', views.index, name='home'),
+    url(r'^help', views.help, name='help'),
     url(r'^admin/', include(admin.site.urls)),
 ]
