@@ -48,10 +48,9 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
             <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="">Link1</a>
-              <a class="mdl-navigation__link" href="">Link2</a>
-              <a class="mdl-navigation__link" href="">Link3</a>
-              <a class="mdl-navigation__link" href="">Link4</a>
+	      {% for name, href in links.items %}
+		<a class="mdl-navigation__link" href="{{ href }}">{{ name }}</a>
+	      {% endfor %}
             </nav>
           </div>
         </header>

@@ -5,7 +5,12 @@ def index(request):
     '''
     This is the index views.
     '''
-    return render(request, 'index.html')
+    # name : href
+    links = {'Home':'/home',
+			 'Contact':'/contact',
+			 'About':'/about',
+			 'Help':'/help',}
+    return render(request, 'index.html',{'links': links})
 
 def help(request):
     '''
