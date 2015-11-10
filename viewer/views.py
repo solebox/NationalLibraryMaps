@@ -17,3 +17,11 @@ def help(request):
     This is the help view.
     '''
     return render(request, 'help.html')
+
+def privacyAndTerms(request):
+    '''
+
+    :param request:
+    :return:
+    '''
+    return render(request, 'privacyAndTerms.html')

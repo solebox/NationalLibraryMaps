@@ -3,7 +3,7 @@
 
 # TEAM
 
-    	Name: Nir Galon
+    Name: Nir Galon
 	Website: https://github.com/nirgn975
 
 	Name: Efrat Abramovitz
@@ -11,9 +11,6 @@
 
 	Name: Jacob Kili
 	Website: https://github.com/solekiller
-
-	Name: Nir Galon
-	Website: nirgn.com
 
 # THANKS
 
@@ -28,6 +25,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
-
+    HTML5, CSS3, javaScript, jQuery, Modernizr
+    Python, Django, Leaflet, Google MDL
