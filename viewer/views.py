@@ -1,22 +1,18 @@
 from django.shortcuts import render
 
-# Create your views here.
+links = {'Home':'/home', 'Contact':'/contact',
+         'About':'/about', 'Help':'/help',}
 def index(request):
     '''
     This is the index views.
     '''
-    # name : href
-    links = {'Home':'/home',
-			 'Contact':'/contact',
-			 'About':'/about',
-			 'Help':'/help',}
-    return render(request, 'index.html',{'links': links})
+    return render(request, 'index.html', {'links': links})
 
 def help(request):
     '''
     This is the help view.
     '''
-    return render(request, 'help.html')
+    return render(request, 'help.html', {'links': links})
 
 def privacyAndTerms(request):
     '''
@@ -24,4 +20,4 @@ def privacyAndTerms(request):
     :param request:
     :return:
     '''
-    return render(request, 'privacyAndTerms.html')
+    return render(request, 'privacyAndTerms.html', {'links': links})
