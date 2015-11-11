@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
+    'leaflet',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -77,12 +79,19 @@ WSGI_APPLICATION = 'Maps.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'proj123',
+        'USER': 'proj123',
+        'PASSWORD' : 'proj123',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        'SCHEMAS' : 'nyc',
     }
 }
 
-
+LEAFLET_CONFIG = {
+    'SRID': 26918
+}
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
