@@ -9,7 +9,7 @@ First clone the project, then enter mapwarper folder by type `cd mapwarper` and 
 After that runs, type `vagrant ssh` to login.
 
 Now type `cd /srv/viewer` and then start python server by type `python manage.py runserver 0.0.0.0:8000&` and enter [http://localhost:8000](http://localhost:8000) to see if it's worked.
-Now type `cd /srv/mapwarper` and then start the rails server by type `rails s -b 0.0.0.0 -p 3000` and enter [http://localhost:3000](http://localhost:3000) to see if it's worked.
+Now type `cd /srv/mapwarper` and then start the rails server by type `rails s -b 0.0.0.0 -p 3000&` and enter [http://localhost:3000](http://localhost:3000) to see if it's worked.
 
 Now we need to create a new user in the postgis database so type `rails c` and then create a new user:
 ```
