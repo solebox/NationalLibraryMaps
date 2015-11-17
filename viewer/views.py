@@ -1,4 +1,12 @@
 from django.shortcuts import render
+from djgeojson.views import GeoJSONLayerView
+
+class MapLayer(GeoJSONLayerView):
+    bbox_auto = True
+    # Options
+   # precision = 4   # float
+   # simplify = 0.5  # generalization
+    srid = 26918
 
 links = {'Home':'/home', 'Contact':'/contact',
          'About':'/about', 'Help':'/help',}
