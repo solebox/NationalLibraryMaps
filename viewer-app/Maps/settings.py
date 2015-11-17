@@ -86,11 +86,20 @@ WSGI_APPLICATION = 'Maps.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+<<<<<<< HEAD:viewer-app/Maps/settings.py
         'NAME': 'mapwarper_development',  # Name of your spatial database
         'USER': 'vagrant',   # Database user
         'PASSWORD': 'vagrant',# Database password
 #        'HOST': '127.0.0.1',
 #        'PORT': '3000',
+=======
+        'NAME': 'proj123',
+        'USER': 'proj123',
+        'PASSWORD' : 'proj123',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        'SCHEMAS' : 'nyc',
+>>>>>>> 67b25a11b70f3ab54a9ee05b91889631affc4490:Maps/settings.py
     }
 }
 
