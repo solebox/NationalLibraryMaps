@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from viewer import views
+from djgeojson.views import GeoJSONLayerView
+from viewer import models
 
 urlpatterns = [
+    url(r'^subway.geojson$', views.MapLayer.as_view(model=models.NycSubwaystations, properties=('name',)), name='subway'),
+    url(r'^data.geojson$', GeoJSONLayerView.as_view(model=models.NycNeighborhoods), name='data'),
     url(r'^$', views.index, name='home'),
     url(r'^help', views.help, name='help'),
     url(r'^privacyAndTerms', views.privacyAndTerms, name='privacyAndTerms'),

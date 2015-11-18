@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.gis',
     'leaflet',
 
+    'djgeojson',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -78,13 +79,6 @@ WSGI_APPLICATION = 'Maps.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
@@ -94,11 +88,6 @@ DATABASES = {
 
     }
 }
-
-LEAFLET_CONFIG = {
-    'SRID': 26918
-}
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
