@@ -39,10 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-<<<<<<< HEAD:Maps/settings.py
     'leaflet',
-=======
->>>>>>> 416fa68b9bc0b02eb9208c8b3b34cf1e8ca7a0c3:viewer-app/Maps/settings.py
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -90,35 +88,18 @@ WSGI_APPLICATION = 'Maps.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-<<<<<<< HEAD:Maps/settings.py
-=======
-<<<<<<< HEAD:viewer-app/Maps/settings.py
         'NAME': 'mapwarper_development',  # Name of your spatial database
         'USER': 'vagrant',   # Database user
         'PASSWORD': 'vagrant',# Database password
-#        'HOST': '127.0.0.1',
-#        'PORT': '3000',
-=======
->>>>>>> 416fa68b9bc0b02eb9208c8b3b34cf1e8ca7a0c3:viewer-app/Maps/settings.py
-        'NAME': 'proj123',
-        'USER': 'proj123',
-        'PASSWORD' : 'proj123',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-        'SCHEMAS' : 'nyc',
-<<<<<<< HEAD:Maps/settings.py
+
     }
 }
 
 LEAFLET_CONFIG = {
     'SRID': 26918
 }
-=======
->>>>>>> 67b25a11b70f3ab54a9ee05b91889631affc4490:Maps/settings.py
-    }
-}
 
->>>>>>> 416fa68b9bc0b02eb9208c8b3b34cf1e8ca7a0c3:viewer-app/Maps/settings.py
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
