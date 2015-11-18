@@ -28,9 +28,8 @@ def privacyAndTerms(request):
 
 def getAllMaps(request):
     my_maps = MyMaps.objects.all()
-
-
+    url = "http://localhost:3000/maps/tile/{id}/{xyz}.png"
     return JsonResponse([{
         'id': map.id,
-        'url': 'http://localhost:3000/maps/tile/' + map.id + '/{z}/{x}/{y}.png',
+        'url': url.format(id=map.id, xyz='{z}/{x}/{y}')
     } for map in my_maps], safe=False)

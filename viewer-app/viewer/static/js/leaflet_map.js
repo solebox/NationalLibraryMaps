@@ -49,7 +49,6 @@ function getMapsListId(onMap){
     $.get("/getMaps/", function (maps) {
         $.each(maps, function (i, map) {
             L.tileLayer(map.url).addTo(onMap);
-            console.log(map.url);
         })
     });
 }
