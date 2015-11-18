@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^help', views.help, name='help'),
     url(r'^privacyAndTerms', views.privacyAndTerms, name='privacyAndTerms'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^getMaps', views.getAllMaps),
 ]
