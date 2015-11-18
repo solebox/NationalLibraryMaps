@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+{% block content %}
+    <div id="map">
+        <div class="mdl-layout mdl-js-layout">
+        {% include 'layouts/navbar.html' %}
+            <main class="mdl-layout__content">
+                <h1>Hello World!</h1>
+            </main>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script src="{% static 'js/leaflet_map.js' %}"></script>
+{% endblock %}
