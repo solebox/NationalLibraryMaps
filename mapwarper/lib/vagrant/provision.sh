@@ -16,12 +16,11 @@ dpkg-reconfigure -f noninteractive grub-pc
 # upgrade all packages
 #apt-get upgrade -y
 
-# install packages as explained in INSTALL.md , push viewer stuff
+# install packages as explained in INSTALL.md
 apt-get install -y ruby1.9.1 libruby1.9.1 ruby1.9.1-dev ri1.9.1 \
     postgresql-9.3-postgis-2.1 postgresql-server-dev-all postgresql-contrib \
     build-essential git-core \
-    libxml2-dev libxslt-dev imagemagick libmapserver1 gdal-bin libgdal-dev ruby-mapscript nodejs\ 
-    python-pip python-dev build-essential libpq-dev
+    libxml2-dev libxslt-dev imagemagick libmapserver1 gdal-bin libgdal-dev ruby-mapscript nodejs
 
 
 #ruby gdal needs the build Werror=format-security removed currently
@@ -60,8 +59,4 @@ fi
 echo "now migrating database. This may take a few minutes"
 # migrate the database to the latest version
 sudo -u vagrant -H bundle exec rake db:migrate
-popd
-# install some lib viewer stuff
-pushd /srv/viewer
-sudo pip install -r requirements.txt
 popd

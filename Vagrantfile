@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "mapwarper", "/srv/mapwarper"
   config.vm.synced_folder "viewer-app", "/srv/viewer"
 
-  config.vm.provision :shell, :path => "mapwarper/lib/vagrant/provision.sh"
+  config.vm.provision :shell, :path => "./provision.sh"
   
 
   #you may want to alter this
