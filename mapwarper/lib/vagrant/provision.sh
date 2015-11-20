@@ -59,9 +59,4 @@ fi
 echo "now migrating database. This may take a few minutes"
 # migrate the database to the latest version
 sudo -u vagrant -H bundle exec rake db:migrate
-
-# install python and stuff
-sudo apt-get install -y python-pip python-dev build-essential libpq-dev
-cd /srv/viewer
-sudo pip install -r requirements.txt
 popd
