@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # make sure we have up-to-date packages
-apt-get update
+# apt-get update
 
 ## vagrant grub-pc fix from: https://gist.github.com/jrnickell/6289943
 # parameters
