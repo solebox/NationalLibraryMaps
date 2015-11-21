@@ -132,6 +132,7 @@ local_settings.py
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/
 
 ## Specific to RubyMotion:
 .dat*
@@ -206,3 +207,7 @@ bower.json
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 
+#warper
+/mapwarper/tmp/*
+/mapwarper/public/uploads/*
+/mapwarper/public/mapimages/*
