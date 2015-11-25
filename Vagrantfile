@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   config.vm.synced_folder "mapwarper", "/srv/mapwarper"
-  config.vm.synced_folder "viewer-app", "/srv/viewer"
+  config.vm.synced_folder "Maps", "/srv/viewer"
 
   config.vm.provision :shell, :path => "./provision.sh"
   
