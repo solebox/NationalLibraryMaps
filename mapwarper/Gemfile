@@ -33,8 +33,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'devise'
-gem 'devise-encryptable'
+gem 'devise', '>= 4.6.0'
+gem 'devise-encryptable', '>= 0.2.0'
 
 gem 'omniauth-twitter'
 gem 'omniauth-osm'
