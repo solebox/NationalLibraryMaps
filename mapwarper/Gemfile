@@ -36,10 +36,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'devise'
 gem 'devise-encryptable'
 
-gem 'omniauth-twitter'
-gem 'omniauth-osm'
+gem 'omniauth-twitter', '>= 1.2.0'
+gem 'omniauth-osm', '>= 0.3.2'
 gem 'omniauth-github'
-gem "omniauth-mediawiki"
+gem "omniauth-mediawiki", ">= 0.0.2"
 
 gem 'pg'
 #gem 'activerecord-postgis-adapter'
