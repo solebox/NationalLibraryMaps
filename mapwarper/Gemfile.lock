@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/timwaters/audited.git
+  remote: https://github.com/timwaters/audited.git
   revision: 5d945c1b3fa5bf99a2a9df512d1a58a90c67e5cd
   branch: rails4
   specs:
@@ -80,6 +80,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     colorize (0.7.7)
+    crass (1.0.6)
     daemons (1.2.2)
     debug_inspector (0.0.2)
     devise (3.4.1)
@@ -122,12 +123,13 @@ GEM
       railties (>= 3.1.0)
     json (1.8.2)
     jwt (1.4.1)
-    loofah (2.0.1)
+    loofah (2.18.0)
+      crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.5)
-    mini_portile (0.6.2)
+    mini_portile2 (2.1.0)
     minitest (5.6.0)
     multi_json (1.11.0)
     multi_xml (0.5.5)
@@ -136,8 +138,8 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
     netrc (0.10.3)
-    nokogiri (1.6.6.2)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.8.1)
+      mini_portile2 (~> 2.1.0)
     oauth (0.4.7)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
@@ -192,10 +194,10 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.2)
-      loofah (~> 2.0)
-    rails-observers (0.1.2)
-      activemodel (~> 4.0)
+    rails-html-sanitizer (1.4.3)
+      loofah (~> 2.3)
+    rails-observers (0.1.5)
+      activemodel (>= 4.0)
     railties (4.2.1)
       actionpack (= 4.2.1)
       activesupport (= 4.2.1)
