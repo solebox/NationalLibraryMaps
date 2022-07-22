@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/timwaters/audited.git
+  remote: https://github.com/timwaters/audited.git
   revision: 5d945c1b3fa5bf99a2a9df512d1a58a90c67e5cd
   branch: rails4
   specs:
@@ -194,8 +194,8 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
-    rails-observers (0.1.2)
-      activemodel (~> 4.0)
+    rails-observers (0.1.5)
+      activemodel (>= 4.0)
     railties (4.2.1)
       actionpack (= 4.2.1)
       activesupport (= 4.2.1)
@@ -245,9 +245,9 @@ GEM
       eventmachine (~> 1.0)
       rack (~> 1.0)
     thor (0.19.1)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (1.4.1)
-    tzinfo (1.2.2)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
       execjs (>= 0.3.0)
