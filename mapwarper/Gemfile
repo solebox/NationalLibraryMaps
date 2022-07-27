@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '5.2.8.1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -43,9 +43,9 @@ gem "omniauth-mediawiki"
 
 gem 'pg'
 #gem 'activerecord-postgis-adapter'
-gem 'activerecord-postgis-adapter', '3.0.0.beta2'
+gem 'activerecord-postgis-adapter', '3.1.2'
 
-gem 'acts-as-taggable-on', '~> 3.3.0'
+gem 'acts-as-taggable-on', '~> 4.0.0'
 gem 'paperclip', '~> 4.2.0'
 gem 'acts_as_commentable'
 gem 'will_paginate', '~> 3.0'
