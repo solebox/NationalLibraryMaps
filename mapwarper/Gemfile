@@ -2,15 +2,15 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '5.0.0'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.5'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem 'devise-encryptable'
 
 gem 'omniauth-twitter'
@@ -60,9 +60,9 @@ gem 'geoplanet'
 gem 'yql', '0.0.2'
 
 group :development do
-   gem 'web-console', '~> 2.0'
+   gem 'web-console', '~> 2.1', '>= 2.1.2'
    gem 'spring'
-   gem 'thin'
+   gem 'thin', '>= 1.7.0'
    gem 'capistrano', '~> 3.2.1'
    gem 'capistrano-rails',    :require => false
    gem 'capistrano-bundler',  :require => false
