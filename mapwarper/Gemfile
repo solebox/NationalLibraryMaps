@@ -38,7 +38,7 @@ gem 'devise-encryptable'
 
 gem 'omniauth-twitter', '>= 1.2.1'
 gem 'omniauth-osm'
-gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-github', '>= 1.2.0'
 gem "omniauth-mediawiki", ">= 0.0.3"
 
 gem 'pg'
